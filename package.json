@@ -1,6 +1,6 @@
 {
   "name": "crud",
-  "homepage": "https://saikat1236.github.io/CRUD",
+  "homepage": "https://saikat1236/CRUD",
   "version": "1.0.0",
   "description": "crud app (node + express + mongodb)",
   "main": "index.js",
