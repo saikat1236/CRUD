@@ -8,7 +8,7 @@ const connectDB = require('./server/database/connection');
 const app = express();
 
 dotenv.config({path: "config.env"})
-const PORT = process.env.PORT || 8080
+const port = process.env.PORT || 3000
 
 //log req
 app.use(morgan("tiny"));
@@ -32,4 +32,7 @@ app.use('/js',express.static(path.resolve(__dirname,"assets/js")))
 //routes
 app.use('/',require('./server/routes/router'))
 
-app.listen(3000,()=>{console.log(`server is running on http://localhost:${PORT}`)});
+// app.listen(3000,()=>{console.log(`server is running on http://localhost:${PORT}`)});
+app.listen(port,()=>{  // do not add localhost here if you are deploying it
+    console.log("server listening to port "+port);
+});
