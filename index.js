@@ -28,6 +28,8 @@ app.set('view engine', 'ejs');
 //load assets
 app.use('/css',express.static(path.resolve(__dirname,"assets/css")))
 app.use('/js',express.static(path.resolve(__dirname,"assets/js")))
+app.use('/output',express.static(path.resolve(__dirname,"views/output")))
+app.use('/img',express.static(path.resolve(__dirname,"assets/img")))
 
 //routes
 app.use('/',require('./server/routes/router'))

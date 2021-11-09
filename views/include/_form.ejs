@@ -1,6 +1,7 @@
  <!-- form handling -->
  <form action="/api/users" method="POST" id="add_user">
-    <div class="new_user">
+    <!-- <form action="output.ejs"> -->
+    <div>
         <div class="form-group">
             <label for="name" class="text-light">Name</label>
             <input type="hidden" name="id" value="">
@@ -35,7 +36,9 @@
         </div>
 
         <div class="form-group">
-            <button type="submit" class="btn text-dark update">Save</button>
+           
+            <button id="output" type="submit" class="btn text-dark update"><a href="/output">Save</a></button>
+        
         </div>
 
     </div>

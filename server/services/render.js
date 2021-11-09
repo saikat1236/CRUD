@@ -13,6 +13,9 @@ exports.homeRoutes = (req,res)=>{
 exports.add_user= (req,res)=>{
     res.render('add_user');
 }
+exports.output= (req,res)=>{
+    res.render('output');
+}
 exports.update_user=(req,res)=>{
     axios.get('http://localhost:3000/api/users',{params:{id: req.query.id}})
     .then(function(userdata){

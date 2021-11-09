@@ -7,6 +7,7 @@ route.get('/',services.homeRoutes);
 
 route.get('/add_user',services.add_user);
 
+route.get('/output',services.output);
 route.get('/update_user',services.update_user);
 
 //api
