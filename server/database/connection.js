@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const connectDB = async()=>{
     try{
-        const con= await mongoose.connect(process.env.MONGO_URL,{
+        const con= await mongoose.connect(process.env.MONGO_URL2,{
             // no longer required for mongoose 6. 
             // useNewUrlParser: true,
             // useUnifiedTopology: true,
