@@ -147,10 +147,10 @@ exports.create= (req,res)=>{
 
     // new user
       const user = new userdb({
-        bfname : req.body.bfname,
-        bfaddrss : req.body.bfaddrss,
-        gfname : req.body.gfname,
-        gfaddrss : req.body.gfaddrss
+        name : req.body.name,
+        email : req.body.email,
+        password : req.body.password,
+        confirmpass : req.body.confirmpass
     })
 
 

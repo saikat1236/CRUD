@@ -20,19 +20,19 @@
 const mongoose = require('mongoose');
 
 var scheme = new mongoose.Schema({
-    bfname:{
+    name:{
         type: String,
         required: true
     },
-    bfaddrss:{
+    email:{
         type: String,
         required: true
     },
-    gfname:{
+    password:{
         type: String,
         required: true
     },
-    gfaddrss:{
+    confirmpass:{
         type: String,
         required: true
     },

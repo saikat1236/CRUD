@@ -2,10 +2,10 @@
 <% for(var i = 0; i < users.length; i++) { %>
     <tr>
         <td><%= i + 1 %></td>
-        <td><%= users[i].bfname %></td>
-        <td><%= users[i].bfaddrss %></td>
-        <td><%= users[i].gfname %></td>
-        <td><%= users[i].gfaddrss %></td>
+        <td><%= users[i].name %></td>
+        <td><%= users[i].email %></td>
+        <td><%= users[i].password %></td>
+        <td><%= users[i].confirmpass %></td>
         <td>
             <a href="/update_user?id=<%= users[i]._id%>" class="btn border-shadow update">
                 <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
