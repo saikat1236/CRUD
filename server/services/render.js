@@ -29,7 +29,7 @@ exports.form= (req,res)=>{
     res.render('form');
 }
 exports.output= (req,res)=>{
-    res.render('output');
+    res.render('sorry');
 }
 exports.homeRoutes= (req,res)=>{
     res.render('main');

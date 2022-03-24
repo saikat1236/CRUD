@@ -12,7 +12,7 @@ route.get('/all_user2',services.all_user2);
 route.get('/add_user',services.add_user);
 route.get('/form',services.form);
 
-route.get('/output',services.output);
+route.get('/sorry',services.output);
 
 route.get('/update_user',services.update_user);
 
